@@ -1,0 +1,6 @@
+.eclipse
+todoapp/target
+todoapp/node_modules
+todoapp/package.json
+todoapp/package-lock.json
+todoapp/.apt_generated_tests
