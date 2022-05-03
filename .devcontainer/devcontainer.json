@@ -1,0 +1,16 @@
+{
+  "name": "practice_java",
+  // "dockerFile":"java/Dockerfile",
+  "dockerComposeFile": [
+    "docker-compose.yml",
+  ],
+  "service": "web",
+  "workspaceFolder": "/opt/project",
+  "remoteEnv": {
+    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+  },
+  "extensions": [
+    "adashen.vscode-tomcat",
+    "vscjava.vscode-java-pack"
+  ]
+}
