@@ -1,6 +1,11 @@
 # これは何
 - Javaの勉強用の環境です
 - Macを想定して書いていますが、インストールするものに書いてあるものが入ればwindowsでも(たぶん)動きます
+- 構築環境
+    - tomcat: 9.0.62.0
+    - Java: 11.0.15
+    - Apache Maven 3.6.3
+    - node: 14.19.1
 # 事前にインストールするもの
 1. Docker desktop
 - 参考: [Docker DesktopのMacへのインストール](https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/)
@@ -55,17 +60,26 @@ mvn package
 5. TOMCAT SERVERSから tomcat を右クリックし「start」でサーバーを起動する
 6. TOMCAT SERVERSのtomcatからデプロイしたプロジェクト名を右クリックし、「Open in browser」で開く
 - 開かないことがあるのでその場合はURLを直接叩けば良い (localhost:8080/todoapp/Read とか)
+7. 以降、Javaファイルを編集するとその変更が反映される
+- ただし、jspの編集は反映されないみたい (現在調査中)
+- warファイルを再生成しているわけではないため、tomcatを再起動した時には mvn package の実行が必要であることに注意する
 
-# sassのコンパイル
+# (参考) sassのコンパイル
 ## 動作環境
 - gulpを使ってsassの変更を監視し、cssに逐次コンパイルする
 - jspやhtmlといった静的ページにはコンパイルされたcssを利用すれば良い 
 ## 初回のみ
-- bash gulpinit.sh を実行する (npmでgulpやsassがインストールされる)
+- 以下のコマンドを実行する (npmでgulpやsassがインストールされる)
+```
+bash gulpinit.sh
+```
 ## 開発時
-- npx gulp watch を実行
+- 以下のコマンドを実行
+```
+npx gulp watch
+```
 - gulpの監視タスクが実行され、sassが変更されるたびにcssへの変換が行われる
 - 使い終わったら controll + C で gulp を止める
 
 # ライブラリを追加したい場合
-- Mavenの設定ファイルである「pom.xml」の <dependencies> タグ下に追加する
+- Mavenの設定ファイルである「pom.xml」のdependenciesタグ下に追加する
