@@ -7,16 +7,16 @@
     - Apache Maven 3.6.3
     - node: 14.19.1
 # 事前にインストールするもの
-1. Docker desktop
+## 1. Docker desktop
 - 参考: [Docker DesktopのMacへのインストール](https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/)
 - Docker Composeも一緒に入るはずだが、入っていなければ別にインストールする 
-2. mySQLWorkbench
+## 2. mySQLWorkbench
 - MySQLを操作しやすくするためのGUI
 - [公式サイト](https://www.mysql.com/jp/products/workbench/)からインストールする
-3. VScode
+## 3. VScode
 - 今回利用するエディタ。一般的によく使われるのでインストールしておくことに損はない(※主観)。
 - 参考: [Visual Studio Codeのダウンロードとインストール](https://www.javadrive.jp/vscode/install/index1.html) 
-4. remote development (VScodeのプラグイン)
+## 4. remote development (VScodeのプラグイン)
 - VScodeがインストールできたら開く
 - 左側のメニューバーから「Extensions」を選択し、検索窓に「Remote Development」と入力し検索する
 - remote developmentをVScodeにインストールする
