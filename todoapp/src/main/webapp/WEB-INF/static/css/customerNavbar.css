@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .customerNavbar {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color:#f79428;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .customerNavbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .customerNavbar a.active {
+      color: white;
+  }
+  /* .customerNavbar a:hover {
+    background: white;
+    color: black;
+  } */
+  
+  
