@@ -1,0 +1,55 @@
+@import "navbar";
+@import "appbar";
+
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    main {
+        // background:  #FFFFEF;
+        flex: 1;
+        #notificationModal{
+            .modal-dialog {
+                padding-top: 50px;
+            }
+            .modal-header {
+                border-bottom: bold orange;
+            }
+            .modal-title {
+                font-size: 15px;
+            }
+            .modal-body {
+                padding: 0;
+                .notification{
+                    padding: 5px 5px;
+                    border-top:1px solid #dee2e6;
+                    border-bottom:1px solid #dee2e6;
+                    .notificationHeader {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        flex-wrap: nowrap;
+                        .notificationDate{
+                            margin-left: auto;
+                        }
+                    }
+                    .notificationTitle {
+                        padding-top: 3px;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+                    .notificationDescription{
+                        font-size: 10px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

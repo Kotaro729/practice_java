@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bodyContainer">
+        <header class="appbar">
+            <div class="iconButtons">
+                <div class="settings1">
+                    <div class="apptitle">隣の晩ごはん</div>
+                    <a href="#change" class="settingIcon" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="購入モードに切替"><i class="bi bi-cart"></i></a>
+                    <a href="#setting" class="settingIcon" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="設定"><i class="bi bi-gear"></i></a>
+                </div>
+                <div class="settings2">
+                    <a href="#address" class="address">現在地: 東京都文京区本郷5-44-11</a>
+                    <a class="notification" data-bs-toggle="modal" data-bs-target="#notificationModal">
+                        <i class="bi bi-bell" data-bs-toggle="tooltip" data-bs-placement="left" title="重要なお知らせ"></i>
+                        <div class="n-badge"><span class="badge-text">10</span></div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <label for="customRange1" class="form-label">Example range</label>
+            <input type="range" class="form-range" id="customRange1">
+            <!-- Modal -->
+            <div class="modal" id="notificationModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="exampleModalLabel">お知らせ</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="notification">
+                                <div class="notificationHeader">
+                                    <div class="notificationTag"><span class="badge bg-danger">重要</span></div>
+                                    <div class="notificationDate"><span class="text-muted small">2022/10/15 14:14</span>
+                                    </div>
+                                </div>
+                                <h1 class="notificationTitle">出品期限が切れました</h1>
+                                <p class="notificationDescription">出品期限が切れましたため、商品〇〇の出品をキャンセルしました。</p>
+                            </div>
+                            <div class="notification">
+                                <div class="notificationHeader">
+                                    <div class="notificationTag"><span class="badge bg-danger">重要</span></div>
+                                    <div class="notificationDate"><span class="text-muted small">2022/10/15 14:14</span>
+                                    </div>
+                                </div>
+                                <h1 class="notificationTitle">出品期限が切れました</h1>
+                                <p class="notificationDescription">出品期限が切れましたため、商品〇〇の出品をキャンセルしました。</p>
+                            </div>
+                            <div class="notification">
+                                <div class="notificationHeader">
+                                    <div class="notificationTag"><span class="badge bg-danger">重要</span></div>
+                                    <div class="notificationDate"><span class="text-muted small">2022/10/15 14:14</span>
+                                    </div>
+                                </div>
+                                <h1 class="notificationTitle">出品期限が切れました</h1>
+                                <p class="notificationDescription">出品期限が切れましたため、商品〇〇の出品をキャンセルしました。</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">全て見る</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="customerNavbar">
+            <a href="#home" class="navTab active">
+                <div class="navIcon">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <span class="iconText">トップ</span>
+            </a>
+            <a href="#news" class="navTab">
+                <div class="navIcon">
+                    <i class="bi bi-shop"></i>
+                </div>
+                <span class="iconText">出品する</span>
+            </a>
+            <a href="#contact" class="navTab">
+                <div class="navIcon">
+                    <i class="bi bi-handbag"></i>
+                    <div class="n-badge"><span class="badge-text">1</span></div>
+                </div>
+                <span class="iconText">配達する</span>
+            </a>
+            <a href="#contact" class="navTab">
+                <div class="navIcon">
+                    <i class="bi bi-journal-check"></i>
+                    <div class="n-badge"><span class="badge-text">4</span></div>
+                </div>
+                <span class="iconText">受注状況</span>
+            </a>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/customerNavbar.js"></script>
+    <script src="js/appbar.js"></script>
+</body>
+
+</html>

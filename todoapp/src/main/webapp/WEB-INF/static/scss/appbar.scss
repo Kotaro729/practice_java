@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .appbar {
+    overflow: hidden;
+    background-color: #f79428;
+    z-index: 10;
+    .iconButtons {
+      padding: 5px 5px;
+      .settings1 {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        gap: 5px 10px;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        .apptitle {
+          margin-right: auto;
+          font-size: 15px;
+          color: black;
+        }
+        .settingIcon {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          text-decoration: none;
+          // font-size: 15px;
+          color: black;
+          .bi {
+            font-size: 15px;
+          }
+          .iconText {
+            font-size: 10px;
+          }
+        }
+      }
+      .settings2 {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 15px;
+        .address {
+          text-decoration: none;
+          color: black;
+        }
+        .notification {
+          margin-left: auto;
+          color: black;
+          display: flex;
+          flex-direction: row;
+          text-decoration: none;
+          .n-badge {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #0d6efd;     
+            z-index: 1;
+            margin-left: -10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .badge-text {
+              font-size: 10px;
+              color:white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  
